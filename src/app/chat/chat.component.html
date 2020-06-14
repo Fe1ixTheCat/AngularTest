@@ -1,0 +1,17 @@
+<div class="chatBlock">
+  <div class="heading">
+    <h2>Chat Room, <span>{{ name }}</span></h2>
+
+  </div>
+  <div class="messageContent">
+    <messageComponent
+    *ngFor="let base of bases"
+    [name]="base.name"
+    [text]="base.text"
+    ></messageComponent>
+  </div>
+  <div class="chatInput">
+    <textarea (keyup.enter)="sendMessage(text)" #text name="input" placeholder="Enter your message..."></textarea>
+    <button  (click)="sendMessage(text)" type="button" name="button">SEND</button>
+  </div>
+</div>

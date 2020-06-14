@@ -1,0 +1,80 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: arial;
+  transition: 0.2s;
+  //outline: 1px solid;
+}
+
+@curiousBlue: #1e89d0;
+@skyBlue: #2f9ae1;
+@grayNurse:  #e9e9e9;
+@concrete: #f1f1f1;
+
+.chatBlock {
+  width: 60%;
+  position: relative;
+  border-radius: 10px;
+  margin-top: 50px;
+  background-color: #fff;
+  .heading {
+    height: 100px;
+    background-color: @concrete;
+    border-radius: 10px 10px 0 0;
+    h2 {
+      color: #848484;
+      line-height: 100px;
+      padding-left: 50px;
+    }
+  }
+  .chatInput {
+    width: 100%;
+    background-color: @concrete;
+    margin-top: 30%;
+    margin-bottom: 50px;
+    box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.1);
+    border-radius: 0 0 10px 10px;
+    textarea {
+      margin-top: 20px;
+      min-width: 70%;
+      max-width: 70%;
+      min-height: 30px;
+      height: 30px;
+      max-height: 50px;
+      margin-left: 10%;
+      border: 0;//2px solid #fff;
+      line-height: 20px;
+      background-color: @concrete;
+      padding: 5px;
+      font-size: 20px;
+      color: #848484;
+    }
+    button {
+      width: 10%;
+      height: 30px;
+      position: relative;
+      margin-left: 15px;
+      bottom: 20px;
+      background-color: @skyBlue;
+      border: none;
+      cursor: pointer;
+      color: @concrete;
+    }
+    button:hover {
+      background-color: @curiousBlue;
+    }
+    textarea:focus, textarea:active {
+      outline: none;
+    }
+    button:focus, button:active {
+      outline: none;
+    }
+    button:active {
+      position: relative;
+      bottom: 18px;
+      opacity: 50%;
+    }
+  }
+}
